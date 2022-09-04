@@ -1,0 +1,472 @@
+/****************************
+      css index
+ ---------------------
+1. START THE NAVBAR SECTION 
+2. START THE INTRO SECTION 
+3. START THE CAMPANIES SECTION
+4. START SECTION 4- THE SERVICES
+5. START SECTION 5 -THE TESTIMONIALS
+6. START SECTION 6 - THE FAQ
+ 7.START SECTION 7 - THE PORTEOLIO
+ 8.START SECTION 8 - GET STARTED
+ 9. START SECTION 9 - THE FOOTER
+*****************************/
+
+/*********************************
+        Google Fonts 
+*********************************/
+
+/*************************************
+     Template defaiult css 
+ **************************************/
+body {
+  font-family: "Poppins", sans-serif;
+}
+/*******************************
+      MY THEME COLORS
+******************************** */
+:root {
+  --primary-dark: #9926f0;
+  --primary-lightt: #bb6ef5;
+  --secondary: #d122e3;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+}
+/**************************************
+    1.  START THE NAVBAR SECTION CSS
+ ************************************ */
+.menu {
+  background: linear-gradient(135deg, #9926f0 60%, #d122e3);
+}
+.menu li {
+  padding: 0 0.7rem;
+}
+.menu li a {
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.btn-rounded {
+  position: relative;
+  padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid #fff;
+  background-color: #fff;
+}
+.btn-rounded span {
+  position: absolute;
+  background-color: #bb6ef5;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.btn-rounded span i {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.btn-rounded:hover {
+  background: linear-gradient(45deg, #9926f0 50%, #d122e3);
+  color: #fff;
+}
+.btn-rounded:hover span {
+  background: #372c53;
+}
+/**************************************
+    2.  START THE INTRO SECTION css
+ ************************************ */
+/* START THE CONTENT FOR THE INTRO CSS */
+.intro-section {
+  background: linear-gradient(135deg, #9926f0 60%, #d122e3);
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.display-2--intro {
+  display: inline-block;
+  font-weight: 700;
+}
+.display-2--discription {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 1.2rem;
+  text-transform: none;
+}
+/* START THE CONTENT FOR THE VIDEO  CSS*/
+.intros .video-box {
+  position: relative;
+}
+.intros .video-box .positon-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-box a span i {
+  font-size: 6rem;
+  color: #d122e3;
+}
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid #fff;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
+}
+.border-animation--border-1 {
+  animation-delay: 1s;
+}
+.border-animation--border-2 {
+  animation-delay: 1.5s;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+/* 3. START THE CAMPANIES SECTION */
+.header-link::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #9926f0;
+}
+.header-link::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #9926f0;
+}
+.campanies {
+  padding: 0 0 5rem 0;
+}
+.campanies_logo-box {
+  max-width: 100%;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.campanies_logo-box img {
+  height: 100%;
+}
+.campanies_logo-box img:hover {
+  filter: grayscale(120);
+}
+/* 4. START SECTION 4- THE SERVICES */
+.display-3 {
+  font-family: "Poppins", sans-serif;
+}
+.border-right {
+  border-right: 0.1rem solid #564c4c;
+  height: 100%;
+}
+/* START THE MARKETING CONTENT */
+.services {
+  position: relative;
+  padding: 1rem 0;
+}
+.services__content {
+  padding: 1rem;
+  margin-top: 0rem;
+}
+.services__content p {
+  font-size: 0.8rem;
+}
+.icon {
+  font-size: 1.5rem;
+  color: #9926f0;
+}
+.display-3--title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  background-image: linear-gradient(to right, #9926f0, #d122e3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.services__pic {
+  max-width: 100%;
+}
+/*******************************************
+      START SECTION 5 -THE TESTIMONIALS
+ ********************************************/
+.testimonials {
+  position: relative;
+  padding: 0;
+  background: linear-gradient(135deg, #9926f0 60%, #d122e3);
+}
+.testimoniols__card {
+  background-color: #fff;
+  padding: 2rem 1.25rem;
+  border-radius: 0.625rem;
+  height: auto;
+  text-align: center;
+}
+.testimoniols__card i {
+  font-size: 1.5rem;
+  color: #9926f0;
+}
+.ratings i {
+  font-size: 1rem;
+  color: #9926f0;
+}
+.testimoniols__picture {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimoniols__picture img {
+  border: 0.325rem solid #9926f0;
+}
+.testimoniols__name {
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+.testimoniols__name h3 {
+  padding-top: 0.8rem;
+  text-transform: capitalize;
+}
+.testimoniols__name p {
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+}
+/*******************************************
+      START SECTION 6 - THE FAQ
+ ********************************************/
+.accordion-item {
+  background-color: #fff;
+  border: 1px none #9926f0;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(112, 40, 157, 0.25);
+}
+/*******************************************
+      START SECTION 7 - THE PORTEOLIO
+ ********************************************/
+.protfolio .primary-color {
+  color: #9926f0;
+  border-color: #9926f0;
+}
+.primary-color:focus {
+  box-shadow: 0 0 0 0.25rem rgba(161, 13, 253, 0.5);
+}
+.primary-color:hover {
+  color: #fff;
+  background-color: #9926f0;
+  border-color: #9926f0;
+}
+.protfolio {
+  padding: 4rem 0;
+}
+.protfolio button {
+  text-transform: capitalize;
+}
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 0.5rem solid #9926f0;
+}
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-info {
+  background-color: rgba(94, 16, 142, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.coption {
+  text-align: center;
+  width: 60%;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  right: 25%;
+}
+.portfolio-box:hover .portfolio-info {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio-box:hover img {
+  transform: scale(1.5);
+  transition-duration: 1000ms;
+  transition-duration: all;
+}
+/*******************************************
+      START SECTION 8 - GET STARTED
+ ********************************************/
+.get-started {
+  padding: 4rem 0;
+  background-color: #86dab2;
+}
+.gradient {
+  background: linear-gradient(135deg, #9926f0 60%, #d122e3);
+}
+.cta-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+.cta-info__list {
+  position: relative;
+  list-style-type: none;
+  display: block;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.cta-info__list li::before {
+  font-family: font awesome 5 free;
+  content: "\f00c";
+  font-weight: 600;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+/* form */
+.form {
+  padding: 3rem;
+}
+.btn-color {
+  background-color: #d122e3;
+}
+.form button {
+  border: none;
+  color: #fff;
+}
+.form button a {
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+/*******************************************
+      START SECTION 9 - THE FOOTER
+ ********************************************/
+.footer {
+  padding: 1rem;
+  background-color: #555;
+}
+.contact-box {
+  position: relative;
+}
+.contact-box__icon {
+  width: 4rem;
+  stroke: #9926f0;
+}
+.contact-box__info {
+  font-weight: 600;
+  padding: 0.4rem;
+}
+.contact-box__info--title {
+  color: #fff;
+  text-decoration: none;
+}
+.contact-box__info--subtitle {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+/* start the socimt media content */
+.footer-sm a {
+  color: #fff;
+}
+.footer-sm i {
+  font-size: 1.9rem;
+  margin-left: 1rem;
+  color: #fff;
+}
+.footer-sm i:hover {
+  color: #9926f0;
+}
+/* start the content for campany */
+.company-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+.company-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.company-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+.company-list li a:hover {
+  color: #9926f0;
+}
+.fooyer-bottom {
+  background-color: #212121;
+}
+.fooyer-bottom__copyright {
+  color: #999;
+  font-weight: 400;
+}
+.fooyer-bottom__copyright a {
+  color: #999;
+  font-weight: 300;
+  text-decoration: none;
+}
+.fooyer-bottom__copyright a:hover {
+  color: #9926f0;
+}
+/* boutton style */
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+  background-color: #9926f0;
+}
+.back-to-top i {
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
